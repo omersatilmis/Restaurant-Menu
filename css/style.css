@@ -1,0 +1,171 @@
+:root {
+  --primary: #ff308d; /* Navbar bulunduğun başlık yazısının rengi */
+  --light: #ffffff; /* Navbar diğer başlık yazı renkleri */
+  --dark: #0f172b;
+}
+
+.ff-secondary {
+  /* Alt taraftaki alt bilgi yazılarını etkiler. */
+  font-family: "Calibri", serif;
+}
+
+.fw-medium {
+  font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+  font-weight: 700 !important;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  display: none;
+}
+
+/*** Spinner - Yükleme logosu ***/
+#spinner {
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*** Buton yeri ***/
+.btn {
+  font-family: "Verdana", serif;
+  font-weight: 500;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: #ffffff; /* Buton yazı rengi */
+}
+
+.btn-lg-square {
+  /* Yukarı çıkma tuşu*/
+  width: 48px;
+  height: 48px;
+}
+
+.btn-lg-square {
+  /*başa dönme*/
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 2px;
+}
+
+/***** Navbar paneli *****/
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 18px;
+  position: relative;
+  margin-left: 30px;
+  padding: 45px 0;
+  outline: none;
+  transition: 0.5s;
+  color: var(--light) !important;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+  padding: 20px 0; /*Sayfayı aşağıyaa kaydırınca gelen Navbar */
+}
+
+/* Navbar yazılarına renk verir */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
+/***** Hero Header *****/
+.hero-header {
+  /*sayfaların koyu kısmın altıns doğru arkasında alt kısma beyaz renk vermek için kod yeri*/
+  background: linear-gradient(rgba(15, 23, 43), rgba(104 115 155)),
+    url(../img/ArkaPlanFoto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*** yemek menüsü ***/
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid var(--primary);
+}
+
+/*** Footer bölümü ***/
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #ffffff;
+  align-items: center;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #00ff9d; /*Footer yazı rengi*/
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
