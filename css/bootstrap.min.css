@@ -47,10 +47,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
   color: #666565;
   background-color: #f1f8ff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
 hr {
   margin: 1rem 0;
@@ -364,6 +369,7 @@ textarea {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+
 }
 @media (min-width: 1200px) {
   .container,
@@ -381,7 +387,9 @@ textarea {
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1320px;
+    max-width: 1890px;
+    margin-left: 0px;
+
   }
 }
 .row {
@@ -499,6 +507,7 @@ textarea {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
@@ -556,6 +565,7 @@ fieldset:disabled .btn {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+
   margin-bottom: 0;
   list-style: none;
 }
@@ -663,6 +673,7 @@ fieldset:disabled .btn {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+ 
 }
 /*navbar yan yana koyuyor*/
 .navbar-nav {
@@ -1227,3 +1238,4 @@ fieldset:disabled .btn {
 .invisible {
   visibility: hidden !important;
 }
+
